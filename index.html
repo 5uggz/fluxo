@@ -5,18 +5,21 @@
     <title id="pageTitle">Fluxo</title>
     <link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <!-- Preload the external script for immediate availability -->
+    <link rel="preload" href="disguise.js" as="script">
 </head>
 <body>
-    <button id="changeFaviconTitle" class="button animated" onClick="disguise()">Disguise</button>
+    <button id="changeFaviconTitle" class="button animated" onClick="loadAndExecuteDisguise()">Disguise</button>
 
     <script>
-        function disguise() {
+        function loadAndExecuteDisguise() {
             const script = document.createElement('script');
             script.src = 'Javascript/disguise.js';
             script.async = true;
 
             script.onload = function() {
-                
+                // Code from disguise.js is now available
+                // You can execute functions or interact with the loaded script here
             };
 
             document.body.appendChild(script);
