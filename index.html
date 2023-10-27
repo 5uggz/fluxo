@@ -5,32 +5,14 @@
     <title>Fluxo</title>
     <link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="disguise.js" as="script">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>Welcome to Our Page</h1>
-            <p>Your Source for Inspiration</p>
-            <button id="changeFaviconTitle" class="button animated" onClick="loadAndExecuteDisguise()">Disguise</button>
-        </section>
-    </main>
+    <button id="changeFaviconTitle" class="button animated" onClick="disguise()">Disguise</button>
 
     <script>
-        function loadAndExecuteDisguise() {
+        function disguise() {
             const script = document.createElement('script');
-            script.src = 'Javascript/disguise.js';
+            script.src = 'disguise.js';
             script.async = true;
 
             script.onload = function() {
@@ -43,3 +25,4 @@
     </script>
 </body>
 </html>
+
