@@ -1,8 +1,8 @@
 /* Apply the black background to the entire page */
 body {
-  background-color: black;
+  background-color: #181818; /* Dark gray background color similar to Noctura.tech */
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,21 +14,41 @@ body {
   transition: background-color 0.5s ease-in-out;
 }
 
-/* Style the cool button */
-.button {
-  background-color: #3498db;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+/* Style the navigation bar */
+header {
+  background-color: #1e1e1e; /* Darker gray for the header background */
+  padding: 20px;
 }
 
-.button:hover {
-  background-color: #2980b9;
-  transition: background-color 0.3s ease-in-out;
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the hero section */
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Your existing button styles here */
 
 /* Add cool button animations */
 @keyframes buttonPulse {
