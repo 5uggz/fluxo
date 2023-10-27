@@ -2,14 +2,30 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title id="pageTitle">Fluxo</title>
+    <title>Fluxo</title>
     <link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <!-- Preload the external script for immediate availability -->
     <link rel="preload" href="disguise.js" as="script">
 </head>
 <body>
-    <button id="changeFaviconTitle" class="button animated" onClick="loadAndExecuteDisguise()">Disguise</button>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Page</h1>
+            <p>Your Source for Inspiration</p>
+            <button id="changeFaviconTitle" class="button animated" onClick="loadAndExecuteDisguise()">Disguise</button>
+        </section>
+    </main>
 
     <script>
         function loadAndExecuteDisguise() {
